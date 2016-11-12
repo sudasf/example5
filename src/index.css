@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.example-enter {
+    z-index: 4;
+	opacity: 0.01;
+	transform: translate3d(0, 0, 0);
+	transition: all .5s ease;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.example-leave {
+  opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all .5s ease;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transform: translate3d(100%, 0, 0);
+}
